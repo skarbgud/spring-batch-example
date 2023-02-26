@@ -49,7 +49,7 @@ public class StepNextJobConfiguration {
 
     @Bean
     public Step step3() {
-        return stepBuilderFactory.get("step1")
+        return stepBuilderFactory.get("step3")
                 .tasklet((contribution, chunkContext) -> {
                     log.info(">>> This is Step3");
                     return RepeatStatus.FINISHED;
